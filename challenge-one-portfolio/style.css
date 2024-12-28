@@ -1,0 +1,240 @@
+
+:root {
+    --cor-de-fundo: #f2e4e7;
+    --cor-de-fundo-menu: #e7cdcf;
+    --cor-do-link: #000000;
+    --titulos: #955252;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0%;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    background-image: url('assets/cabecalho.jpg');
+}
+
+.cabecalho__logo {
+    max-width: 100px;
+}
+
+.cabecalho__titulo {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--titulos);
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+    color: var(--titulos);
+}
+
+.navegacao__elemento a:hover {
+    color: #cca3a3;
+}
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    padding-right: 13%;
+    padding-left: 9%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    align-items: center;
+    
+}
+
+.apresentacao__foto {
+    border-radius: 100%;
+    max-width: 250px;
+    float: left;
+}
+
+.apresentacao__titulo {
+    color: var(--titulos);
+    float: right;
+    
+}
+
+.apresentacao__subtitulo {
+    float: right;
+}
+
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim {
+    padding-right: 12%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+
+}
+
+.sobre-mim__titulo {
+    color: var(--titulos);
+}
+
+
+.coluna {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 14%;
+    padding-top: 2%;
+    padding-bottom: 7%;
+    justify-content: space-between;
+
+
+
+}
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+
+.habilidades__titulo {
+    color: var(--titulos);
+}
+
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+
+
+.hobbies__titulo {
+    color: var(--titulos);
+}
+
+/*------------------------------ Seção de formação academica --------------------------------*/
+
+
+
+.formacao__titulo {
+    color: var(--titulos);
+}
+
+.formacao__icone {
+    max-width: 85px;
+}
+
+
+/* -------------------------------- links --------------------------------*/
+
+
+.links_titulo {
+    color: var(--titulos);
+}
+
+.redes__elemento a {
+    color: #955252;
+}
+
+
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Para telas pequenas (smartphones em modo retrato) */
+@media (max-width: 600px) {
+    .cabecalho__titulo {
+        font-size: 1.4rem;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .apresentacao__foto {
+        max-width: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .apresentacao__titulo, .apresentacao__subtitulo {
+        float: none;
+        text-align: center;
+    }
+
+    .sobre-mim {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .coluna {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+
+/* Para telas médias (tablets em modo paisagem ou pequenos desktops) */
+@media (max-width: 900px) {
+    .apresentacao {
+        flex-direction: column;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .apresentacao__foto {
+        max-width: 200px;
+    }
+
+    .apresentacao__titulo, .apresentacao__subtitulo {
+        float: none;
+        text-align: center;
+    }
+
+    .coluna {
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.6rem;
+    }
+}
+
+/* Para telas grandes (desktops maiores) */
+@media (min-width: 1200px) {
+    .apresentacao {
+        padding-right: 13%;
+        padding-left: 9%;
+        padding-top: 6%;
+        padding-bottom: 5%;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+}
